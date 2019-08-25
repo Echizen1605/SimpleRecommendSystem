@@ -1,0 +1,17 @@
+<!-- views/index.html -->
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>文本搜索</title>
+</head>
+<body>
+	<form action="/" method="post">
+		待查文本：<br>
+		<input name="SearchText" type="text" rows="1" cols=50 style="font-size:14" value={{.SearchText}}>
+		<input type="submit" value="搜索" style="height:60px;width:50px;display:inline-block;">
+	</br>
+		查找结果：<br>
+		<textarea name="Content" rows=30 cols=150 style="font-size:14">{{.Content}}</textarea><br>
+	</form>
+</body>
+</html>
